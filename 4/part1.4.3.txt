@@ -1,0 +1,11 @@
+Commands:
+
+1. To generate container containing ubuntu with website command:
+docker run -d -it --name webby ubuntu sh -c "echo 'Input website:'; read website; echo 'Searching..'; sleep 1; curl http://$website;"
+
+2. Add Curl dependency to ubuntu:
+docker exec -it webby sh -c "apt update && apt upgrade && apt install curl"
+
+3. Attach to container and insert "helsinki.fi"
+docker attach webby
+helsinki.fi

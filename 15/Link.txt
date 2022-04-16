@@ -1,0 +1,4 @@
+https://hub.docker.com/r/latikker/patientor-backend
+
+Dockerfile has been generated from repository:
+https://github.com/LauraTikker/patientior-backend
